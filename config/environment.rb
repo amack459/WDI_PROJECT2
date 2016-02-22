@@ -13,6 +13,7 @@ assets do
     '/js/app.js'
   ]
   css :application, [  
+    'bower_components/pure/pure.css',
     '/stylesheets/style.css'
   ]
   js_compression :jsmin    
