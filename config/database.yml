@@ -1,3 +1,5 @@
 development:
   adapter: postgresql
   database: luxury_car_development
+
+
