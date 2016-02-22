@@ -1,0 +1,22 @@
+{
+  "name": "WDI_PROJECT2",
+  "homepage": "https://github.com/amack459/WDI_PROJECT2",
+  "authors": [
+    "Acacia Mack <acacialmack@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "^0.6.0"
+  }
+}
