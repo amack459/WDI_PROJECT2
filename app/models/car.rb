@@ -5,4 +5,7 @@ class Car < ActiveRecord::Base
   validates :price, presence: true
   validates :dealer_id, presence: true
   validates :image, presence: true
+
+  belongs_to :dealer
+  has_many :users
 end

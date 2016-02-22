@@ -3,4 +3,6 @@ class Dealer < ActiveRecord::Base
   validates :email, presence: true, uniqueness: true
   validates :password, presence: true
   validates :dealership, presence: true
+
+  has_many :cars
 end
