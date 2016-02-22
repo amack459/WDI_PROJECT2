@@ -7,8 +7,7 @@ class CreateCarTable < ActiveRecord::Migration
       t.string :year
       t.string :price
       t.integer :dealer_id
-
       t.timestamps
-
+    end
   end
 end

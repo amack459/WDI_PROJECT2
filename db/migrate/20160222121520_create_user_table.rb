@@ -5,8 +5,8 @@ class CreateUserTable < ActiveRecord::Migration
       t.string :user_name, limit: 50
       t.string :password
       t.string :image
-
       t.timestamps
-
+    end
   end
 end
+

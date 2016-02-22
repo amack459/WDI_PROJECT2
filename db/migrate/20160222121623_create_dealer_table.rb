@@ -7,7 +7,7 @@ class CreateDealerTable < ActiveRecord::Migration
       t.string :dealership
       t.string :image
       t.integer :car_id
-
       t.timestamps
+    end
   end
 end
