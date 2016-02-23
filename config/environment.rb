@@ -27,6 +27,7 @@ APP_NAME = APP_ROOT.basename.to_s
 # Set the views directory
 configure do 
   enable :sessions
+  set :session_secret, ENV['SESSION_SECRET'] || "this is a secret shhh"
   set :views, File.join(APP_ROOT, "app", "views")
 end
 

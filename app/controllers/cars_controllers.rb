@@ -12,10 +12,10 @@ end
 
 #Create
 post '/cars' do
+  authorize!
   @car = Car.new(params[:car])
-  p params[:car]
-  p @car
   if @car.save
+    @car.users << current_user
     redirect "/cars"
   else
     p @car.errors

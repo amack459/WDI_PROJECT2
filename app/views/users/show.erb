@@ -1,1 +1,7 @@
 <h1>Users Show</h1>
+
+<ul>
+  <% current_user.cars.each do |car| %>
+  <li><%= car.model %></li>
+<% end %>
+</ul>
