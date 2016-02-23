@@ -12,10 +12,13 @@ end
 
 #Create
 post '/cars' do
-  @car = Cars.new(params[:car])
+  @car = Car.new(params[:car])
+  p params[:car]
+  p @car
   if @car.save
     redirect "/cars"
   else
+    p @car.errors
     erb :'sessions/new'
   end
 end
