@@ -25,15 +25,18 @@
                 <a href="/users/<%= @current_user.id %>" class="pure-menu-link"><%= @current_user.user_name %></a>
             </li>
 
-            <li class="pure-menu-item">
-                <a href="/cars" class="pure-menu-link">Cars</a>
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a href="#" id="menuLink1" class="pure-menu-link">Cars</a>
+                <ul class="pure-menu-children">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Add Car</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Edit Car</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Delete Car</a></li>
+                </ul>
             </li>
 
             <li class="pure-menu-item">
                 <a href="/logout" class="pure-menu-link">Logout</a>
             </li>
-
-           
 
             <% else %>
 
