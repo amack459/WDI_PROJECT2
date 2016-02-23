@@ -11,10 +11,15 @@
     <label for="password">Password</label>
     <input name="user[password]" id="password" type="password" placeholder="Password">
 
-    <label for="remember" class="pure-checkbox">
-      <input id="remember" type="checkbox"> Remember me
+    <label for="dealer" class="pure-radio">
+    <input id="dealer" type="radio" name="optionsRadios" value="dealer">
+        I am a dealer!
     </label>
 
+    <label for="user" class="pure-radio">
+      <input id="user" type="radio" name="optionsRadios" value="user" checked>
+      I am a costumer!
+    </label>
     <button type="register" class="pure-button pure-button-primary">Register</button>
   </fieldset>
 </form>

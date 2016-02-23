@@ -18,7 +18,6 @@ post '/cars' do
     @car.users << current_user
     redirect "/cars"
   else
-    p @car.errors
     erb :'sessions/new'
   end
 end
