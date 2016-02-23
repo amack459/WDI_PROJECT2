@@ -1,1 +1,21 @@
 <h1>ADD NEW CAR</h1>
+
+<form class="pure-form pure-form-stacked" method="post" action="/cars">
+  <fieldset>
+  <legend>Register</legend>
+
+    <label for="make">Make</label>
+    <input name="car[make]" id="make" type="make" placeholder="Make">
+
+    <label for="model">Model</label>
+    <input name="car[model]"id="model" type="model" placeholder="Model">
+
+    <label for="year">Year</label>
+    <input name="car[year]" id="year" type="year" placeholder="Year">
+    
+    <label for="price">Price</label>
+    <input name="car[price]" id="price" type="price" placeholder="Price">
+
+    <button type="add_car" class="pure-button pure-button-primary">Add Car</button>
+  </fieldset>
+</form>
