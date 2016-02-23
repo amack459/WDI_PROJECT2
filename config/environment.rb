@@ -13,7 +13,7 @@ assets do
     '/js/app.js'
   ]
   css :application, [  
-    'bower_components/pure/pure.css',
+    '/bower_components/pure/pure-min.css',
     '/stylesheets/style.css'
   ]
   js_compression :jsmin    
@@ -25,12 +25,13 @@ APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 APP_NAME = APP_ROOT.basename.to_s
 
 # Set the views directory
-configure do
+configure do 
+  enable :sessions
   set :views, File.join(APP_ROOT, "app", "views")
-end 
+end
 
 
 # Set up the models, controllers and helpers
-['models', 'controllers', 'helpers'].each do |folder|
-  Dir[APP_ROOT.join('app', folder, '*.rb')].each { |file| require file }
+["models", "controllers", "helpers"].each do |folder|
+  Dir[APP_ROOT.join("app", folder, "*.rb")].each { |file| require file }
 end
