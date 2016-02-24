@@ -1,1 +1,7 @@
 <h1>HOME</h1>
+
+<ul>
+  <% Car.all.each do |car| %>
+  <li><img src="<%= car.image %>" width="400"></li>
+<% end %>
+</ul>

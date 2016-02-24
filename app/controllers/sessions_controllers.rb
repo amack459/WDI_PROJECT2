@@ -14,7 +14,7 @@ post '/login' do
     #log the user in 
     session[:user_id] = user.id
     flash[:success] = "Welcome!"
-    redirect "/users/#{user.id}"
+    redirect "/"
   else
     #otherwise render login
     flash[:danger] = "Username or password is incorrect"
@@ -28,3 +28,6 @@ get '/logout' do
   session.clear
   redirect '/login'
 end
+
+
+# /users/#{user.id}
