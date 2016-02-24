@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   validates :password, presence: true
 
   has_and_belongs_to_many :cars
+  belongs_to :dealer
 
   has_secure_password
 end

@@ -6,21 +6,20 @@ end
 post '/register' do
   @user = User.new(params[:user])
 
+  p "NEW USER: "
+  p @user
+
   if params[:user][:user_type] == "dealer"
-    @dealer = Dealer.new(params[:dealer])
+    @dealer = Dealer.create(params[:dealer])
+    @user.dealer = @dealer
   end
 
   if @user.save
-    
-    if @dealer
-      @dealer.save
-      @user.dealer = @dealer
-    end
-
     session[:user_id] = @user.id
     flash[:success] = "Thanks for registering!"
     redirect '/cars'
   else
+    p "USER FAIL!"
     erb :'authorizations/register'
   end
 end
