@@ -17,7 +17,6 @@
                 <li class="pure-menu-item">
                     <a href="/users/<%= current_user.id %>" class="pure-menu-link"><%= current_user.user_name %>'s Wishlist</a>
                 </li>
-                
 
             <% if is_dealer? %>
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
@@ -66,8 +65,10 @@
                 </li>
 
             <% end %>
+        <li class="pure-menu-item">
+            <a href="/logout" class="pure-menu-link">Logout</a>
+        </li>
         </ul>
-
     </div>
 </div>
 <main>
