@@ -2,6 +2,6 @@
 
 <ul>
   <% current_user.cars.each do |car| %>
-  <li><%= car.model %></li>
+  <a href="/cars/:id" <li><%= car.model %></li></a>
 <% end %>
 </ul>

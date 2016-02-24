@@ -2,6 +2,6 @@
 
 <ul>
   <% Car.all.each do |car| %>
-  <li><img src="<%= car.image %>" width="400"></li>
+  <a href="/cars/<%= car.id %>"<li><img src="<%= car.image %>" width="400"></li></a>
 <% end %>
 </ul>

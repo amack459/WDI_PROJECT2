@@ -8,6 +8,10 @@ helpers do
     !!current_user
   end
 
+  def current_car
+    @current_car ||= Car.find(params[:car_id])
+  end
+
   def authorize!
     unless is_logged_in?
       flash[:danger] = "You must log in to view this page!"

@@ -42,7 +42,7 @@ end
 put '/cars/:id' do
   @car = Car.find(params[:id])
   if @car.update(params[:car])
-    redirect "/car/#{@car.id}"
+    redirect "/cars/#{@car.id}"
   else
     erb :'cars/edit'
   end
@@ -55,9 +55,9 @@ post '/cars/:id/add-to-wishlist' do
   redirect "/cars"
 end
 
-# #Delete
-# destroy '/users/:id' do 
-#   @user = User.find(params[:id])
-#   @user.destroy
-#   redirect("/users")
+# # #Delete
+# destroy '/cars/:id' do 
+#   @car = Car.find(params[:id])
+#   @car.destroy
+#   redirect("/cars")
 # end
