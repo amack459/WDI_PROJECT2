@@ -1,7 +1,8 @@
-<h1>Users Show</h1>
+<h1><%= current_user.user_name %>'s Wishlist</h1>
 
 <ul>
   <% current_user.cars.each do |car| %>
   <li><img src="<%= car.image %>" width="400"></li>
 <% end %>
+  
 </ul>

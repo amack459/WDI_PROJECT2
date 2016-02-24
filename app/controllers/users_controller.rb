@@ -41,8 +41,8 @@ put '/users/:id' do
 end
 
 # #Delete
-# destroy '/users/:id' do 
-#   @user = User.find(params[:id])
-#   @user.destroy
-#   redirect("/users")
+# delete '/cars/:id/delete' do 
+#   @car = Car.find(params[:id])
+#   @car.destroy
+#   redirect "/cars"
 # end

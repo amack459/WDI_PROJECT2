@@ -6,6 +6,25 @@ require "sass/plugin/rack"
 Sass::Plugin.options[:style] = :compact
 use Sass::Plugin::Rack 
 
+# MAIL setup
+
+mail_options = {
+  address: "smtp.gmail.com",
+  port: "587",
+  domain: "localhost",
+  
+  # Calls environment variables from zshrc
+  user_name: ENV['GMAIL_USERNAME'],
+  password: ENV['GMAIL_PASSWORD'],
+  authentication: "plain",
+  enable_starttls_auto: true
+}
+
+Mail.defaults do
+  delivery_method(:smtp, mail_options)
+end
+
+
 #set up the asset pipeline
 register Sinatra::AssetPack
 assets do 
@@ -27,7 +46,7 @@ APP_NAME = APP_ROOT.basename.to_s
 # Set the views directory
 configure do 
   enable :sessions
-  set :session_secret, ENV['SESSION_SECRET'] || "this is a secret shhh"
+  # set :session_secret, ENV['SESSION_SECRET'] || "this is a secret shhh"
   set :views, File.join(APP_ROOT, "app", "views")
 end
 

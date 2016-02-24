@@ -46,8 +46,18 @@ end
 
 # Add car to wishlist
 post '/cars/:id/add-to-wishlist' do
+
   @car = Car.find(params[:id])
   current_user.cars << @car
+  
+  # Send mail
+  Mail.deliver do
+    to "acacialmack@gmail.com"
+    from "mx.hilliard@gmail.com"
+    subject "Car request"
+    body " Your car has been added to a wishlist"
+  end
+
   redirect "/cars"
 end
 
