@@ -7,11 +7,20 @@
     <img src="<%= car.image %>" width="300"> 
   </a>
   
-  <a href="/cars/<%= car.id %>/edit">Edit</a>
+  <% if is_dealer? %>
+ <!--  <a href="/cars/<%= car.id %>/edit">Edit</a> -->
+  <form method="post" action="/cars/<%= car.id %>/edit">
+    <input type="submit" name="_method" value="Edit">
 
   <form method="post" action="/cars/<%= car.id %>/delete">
     <input type="submit" name="_method" value="DELETE">
     <!-- <button>Delete</button> -->
   </form>
+  <% else %>
+
+  <form method="post" action="/cars/<%= car.id %>/add-to-wishlist">
+    <input type="submit" name="_method" value="Add to wishlist"></input>
+  </form>
+  <% end %>
 <% end %>
 </ul>
