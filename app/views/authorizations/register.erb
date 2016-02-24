@@ -12,14 +12,24 @@
     <input name="user[password]" id="password" type="password" placeholder="Password">
 
     <label for="dealer" class="pure-radio">
-    <input id="dealer" type="radio" name="optionsRadios" value="dealer">
-        I am a dealer!
+        <input id="dealer" type="radio" name="user[user_type]" value="dealer">
+        I sell cars
     </label>
 
     <label for="user" class="pure-radio">
-      <input id="user" type="radio" name="optionsRadios" value="user" checked>
-      I am a costumer!
+        <input id="user" type="radio" name="user[user_type]" value="user" checked>
+        I buy cars
     </label>
+
+    <label for="dealer[dealership]">Name of dealership</label>
+    <input name="dealer[dealership]" placeholder="Name of dealership">
+
+    <label for="dealer[email]">Email</label>
+    <input name="dealer[email]" placeholder="Name of email">
+
+    <label for="dealer[image]">Image</label>
+    <input name="dealer[image]" placeholder="Image URL">
+
     <button type="register" class="pure-button pure-button-primary">Register</button>
   </fieldset>
 </form>

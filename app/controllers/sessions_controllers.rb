@@ -1,6 +1,6 @@
 #get the login form
 get '/login' do 
-  @user = User.new
+  @user = User.new 
   erb :"sessions/login"
 end 
 

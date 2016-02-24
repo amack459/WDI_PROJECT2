@@ -14,4 +14,8 @@ helpers do
       redirect '/login'
     end  
   end
+
+  def is_dealer?
+    current_user.user_type == 'dealer'
+  end
 end

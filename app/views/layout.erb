@@ -11,12 +11,20 @@
         <a class="pure-menu-heading" href="/">CARfetch</a>
         <ul class="pure-menu-list">        
 
-            <li class="pure-menu-item">
-                <a href="/about" class="pure-menu-link">About</a>
-            </li>
-          
-            <li class="pure-menu-item">
-                <a href="/contact" class="pure-menu-link">Contact</a>
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a href="/cars" id="menuLink1" class="pure-menu-link">Cars</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item"><a href="/cars/new" class="pure-menu-link">Aston Martin</a></li>
+                    <li class="pure-menu-item"><a href="/#{@current_car}/:id" class="pure-menu-link">Bentley</a></li>
+                    <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">BMW</a></li>
+                    <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Ferarri</a></li>
+                    <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Porsche</a></li>
+                    <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Maserati</a></li>
+                    <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Lotus</a></li>
+                    <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Mercedes</a></li>
+                    <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Tesla</a></li>
+                    <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Jaguar</a></li>
+                </ul>
             </li>
 
             <% if is_logged_in? %>
@@ -46,6 +54,14 @@
 
              <li class="pure-menu-item">
                 <a href="/login" class="pure-menu-link">Login</a>
+            </li>
+
+            <li class="pure-menu-item">
+                <a href="/about" class="pure-menu-link">About</a>
+            </li>
+            
+            <li class="pure-menu-item">
+                <a href="/contact" class="pure-menu-link">Contact</a>
             </li>
 
             <% end %>
