@@ -1,0 +1,25 @@
+<h1>EDIT CAR <%= @car.make%> <%= @car.model %> </h1>
+
+
+<form class="pure-form pure-form-stacked" method="post" action="/cars">
+  <fieldset>
+  <legend>Register</legend>
+
+    <label for="make">Make</label>
+    <input name="car[make]" id="make" type="make" placeholder="Make" value="<%= @car[make] %>">
+
+    <label for="model">Model</label>
+    <input name="car[model]"id="model" type="model" placeholder="Model" value="<%= @car[model] %>">
+
+    <label for="year">Year</label>
+    <input name="car[year]" id="year" type="year" placeholder="Year" value="<%= @car[year] %>">
+    
+    <label for="price">Price</label>
+    <input name="car[price]" id="price" type="price" placeholder="Price" value="<%= @car[price] %>">
+
+    <label for="image">Image</label>
+    <input name="car[image]" placeholder="Image URL" value="<%= @car[image] %>">
+
+    <button type="add_car" class="pure-button pure-button-primary">Add Car</button>
+  </fieldset>
+</form>

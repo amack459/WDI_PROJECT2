@@ -1,13 +1,13 @@
 #Index
 get '/cars' do 
   @cars = Car.all
-  erb :'dealers/index'
+  erb :'cars/index'
 end
 
 #New
 get '/cars/new' do 
   @car = Car.new
-  erb :'dealers/new'
+  erb :'cars/new'
 end
 
 #Create
@@ -18,7 +18,7 @@ post '/cars' do
     @car.users << current_user
     redirect "/cars"
   else
-    erb :'dealers/new'
+    erb :'cars/new'
   end
 end
 
@@ -26,19 +26,24 @@ end
 get '/cars/:id' do 
   @car = Car.find(params[:id])
   if @user 
-    erb :'dealers/show'
+    erb :'cars/show'
   else
     redirect "/cars"
   end
 end
 
-#Edit/Update
+#Edit
+get '/cars/:id/edit' do
+  erb :'cars/edit'
+end
+
+#Update
 put '/cars/:id' do
   @car = Car.find(params[:id])
   if @car.update(params[:car])
     redirect "/car/#{@car.id}"
   else
-    erb :'dealers/show'
+    erb :'cars/edit'
   end
 end
 
