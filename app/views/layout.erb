@@ -12,20 +12,26 @@
         <ul class="pure-menu-list">        
 
 
-            <% if is_logged_in? %>
+            <% if is_logged_in? && is_dealer? %>
 
-                <li class="pure-menu-item">
-                    <a href="/users/<%= current_user.id %>" class="pure-menu-link"><%= current_user.user_name %>'s Wishlist</a>
-                </li>
-
-            <% if is_dealer? %>
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
                     <a href="/cars" id="menuLink1" class="pure-menu-link">Cars</a>
                     <ul class="pure-menu-children">
                     
                         <li class="pure-menu-item"><a href="/cars/new" class="pure-menu-link">Add Car</a></li> 
                     </ul>
-            <% else %>
+                </li>
+
+                <li class="pure-menu-item">
+                    <a href="/logout" class="pure-menu-link">Logout</a>
+                </li>
+
+            <% elsif is_logged_in? %>
+
+                <li class="pure-menu-item">
+                    <a href="/users/<%= current_user.id %>" class="pure-menu-link"><%= current_user.user_name %>'s Wishlist</a>
+                </li>
+
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
                     <a href="/cars" id="menuLink1" class="pure-menu-link">Cars</a>
                     <ul class="pure-menu-children">
@@ -41,11 +47,10 @@
                         <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Jaguar</a></li>
                     </ul>
                 </li>
-            </li>
 
-            <% end %>  
-                   
-           
+                <li class="pure-menu-item">
+                    <a href="/logout" class="pure-menu-link">Logout</a>
+                </li>
 
             <% else %>
 
@@ -66,9 +71,7 @@
                 </li>
 
             <% end %>
-        <li class="pure-menu-item">
-            <a href="/logout" class="pure-menu-link">Logout</a>
-        </li>
+       
         </ul>
     </div>
 </div>
