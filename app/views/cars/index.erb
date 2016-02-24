@@ -8,6 +8,10 @@
   </a>
   
   <a href="/cars/<%= car.id %>/edit">Edit</a>
-  <a href="/cars/<%= car.id %>/edit">Delete</a>
+
+  <form method="post" action="/cars/<%= car.id %>/delete">
+    <input type="submit" name="_method" value="DELETE">
+    <!-- <button>Delete</button> -->
+  </form>
 <% end %>
 </ul>

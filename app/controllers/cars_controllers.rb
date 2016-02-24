@@ -51,9 +51,9 @@ post '/cars/:id/add-to-wishlist' do
   redirect "/cars"
 end
 
-# # #Delete
-# destroy '/cars/:id' do 
-#   @car = Car.find(params[:id])
-#   @car.destroy
-#   redirect("/cars")
-# end
+# #Delete
+delete '/cars/:id/delete' do 
+  @car = Car.find(params[:id])
+  @car.destroy
+  redirect "/cars"
+end
