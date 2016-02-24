@@ -34,6 +34,7 @@ end
 
 #Edit
 get '/cars/:id/edit' do
+  @car = Car.find(params[:id])
   erb :'cars/edit'
 end
 
