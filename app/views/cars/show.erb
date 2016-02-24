@@ -1,7 +1,15 @@
-<h1>Cars Show</h1>
+<h1>Car Show <%= @car.make%> <%= @car.model %> </h1>
 
 <ul>
-  <% current_user.cars.each do |car| %>
-  <a href="/cars/:id" <li><%= car.model %></li></a>
-<% end %>
+  <li>
+    <a href="/cars/<%= @car.id %>">
+      <img src="<%= @car.image %>" width="300"> 
+    </a>
+  </li>
+  <li> Year: <%= @car.year %> </li>
+  <li> Price: <%= @car.price %> </li>
+  <li> Dealer: <%= @car.dealer.name %> </li>
 </ul>
+
+
+ 

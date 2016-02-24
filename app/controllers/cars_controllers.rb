@@ -25,11 +25,7 @@ end
 #Show
 get '/cars/:id' do 
   @car = Car.find(params[:id])
-  if @user 
     erb :'cars/show'
-  else
-    redirect "/cars"
-  end
 end
 
 #Edit
