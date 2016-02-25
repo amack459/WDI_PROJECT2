@@ -4,14 +4,14 @@
 
 <h1>ALL CARS</h1>
 
-<!-- <div class="all-cars pure-g">   -->
+<div class="all-cars">  
 <% @cars.each do |car| %>
   <li class="all-cars pure-u-md-2"><%=car.year%> <%= car.model %></li>
   <li class="all-cars pure-u-md-2"><a href="/cars/<%= car.id %>"> 
-    <img src="<%= car.image %>" width="300"> 
+    <img src="<%= car.image %>" width="400"> 
   </a></li>
   <li class="all-cars pure-u-md-2">£ <%= car.price %></li>
-<!-- </div> -->
+</div>
   
   <% if is_dealer? %>
 

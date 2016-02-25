@@ -3,6 +3,7 @@ body {
   font-weight: bold;
   background: #F8F8F8;
   height: 100%;
+  color: #2D3142;
 }
 
 li {
@@ -106,6 +107,8 @@ section.register {
   border-radius: 20px;
   box-shadow: 3px 4px 2px 0px #8D99AE;
   color: #F8F8F8;
+  margin: 5px;
+  padding: .4em 2em;
 }
 
 .pure-button:hover {
@@ -115,6 +118,8 @@ section.register {
 
 }
 
-
+.all-cars{
+  padding: 50px 0px 15px 0px;
+}
 
 
