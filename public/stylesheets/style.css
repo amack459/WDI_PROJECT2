@@ -21,10 +21,16 @@ li {
 
 }
 
-/*.car-item:nth-child(0) {
+.car-item:nth-child(0) {
   width: 80vw;
   height: 40vh;
-}*/
+}
+
+
+.car-item:nth-child(-n+2) {
+  width: 40vw;
+  height: 20vh;
+}
 
 #menu, .container {
   display: inline-block;
@@ -64,4 +70,9 @@ h1 {
 
 section.home .cars{
   margin-left: 140px;
+}
+
+/*add new car*/
+.new-car{
+
 }
