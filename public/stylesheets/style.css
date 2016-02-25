@@ -86,12 +86,9 @@ section.login {
 
 .login-box{
   margin-top: 150px;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
-button.login {
-  margin-top: 100px;
-}
 
 /*register*/
 section.register {
@@ -103,6 +100,8 @@ section.register {
   background: #2D3142;
   border-radius: 20px;
   box-shadow: 3px 4px 2px 0px #8D99AE;
+  margin-top: 145px;
+  margin-left: 25px;
 }
 
 .pure-button:hover {
