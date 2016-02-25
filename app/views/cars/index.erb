@@ -6,28 +6,34 @@
 <ul>
 <% @cars.each do |car| %>
   <li><%= car.model %></li>
-  <a href="/cars/<%= car.id %>"> 
+  <li><a href="/cars/<%= car.id %>"> 
     <img src="<%= car.image %>" width="300"> 
-  </a>
+  </a></li>
   <li>£ <%= car.price %></li>
   
   <% if is_dealer? %>
+
  <!--  <a href="/cars/<%= car.id %>/edit">Edit</a> -->
+ <li>
   <form method="post" action="/cars/<%= car.id %>/edit">
     <button type="submit" class="pure-button pure-button-primary">Edit</button>
   </form>
+</li>
 
-  <form method="post" action="/cars/<%= car.id %>/delete">
-    <button type="submit" class="pure-button pure-button-primary">Delete</button>
-    <!-- <button>Delete</button> -->
-  </form>
+  <li>
+    <form method="post" action="/cars/<%= car.id %>/delete">
+      <button type="submit" class="pure-button pure-button-primary">Delete</button>
+      <!-- <button>Delete</button> -->
+    </form>
+  <li>
   <% else %>
 
   
-
-  <form method="post" action="/cars/<%= car.id %>/add-to-wishlist">
-    <button type="submit" class="pure-button pure-button-primary">ADD TO WISHLIST</button>
-  </form>
+  <li>
+    <form method="post" action="/cars/<%= car.id %>/add-to-wishlist">
+      <button type="submit" class="pure-button pure-button-primary">ADD TO WISHLIST</button>
+    </form>
+  <li>
 
 <!--   <form method="post" action="/cars/<%= car.id %>/add-to-wishlist">
     <input type="submit" name="_method" value="Contact Seller"></input>
