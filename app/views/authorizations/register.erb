@@ -1,35 +1,38 @@
-<form class="pure-form pure-form-stacked" method="post" action="/register">
-  <fieldset>
-    <legend>Register</legend>
 
-    <label for="email">Email</label>
-    <input name="user[email]" id="email" type="email" placeholder="Email">
+<section class="register"> 
+    <form class="pure-form pure-form-stacked" method="post" action="/register">
+      <fieldset>
+        <legend>Register</legend>
 
-    <label for="username">Username</label>
-    <input name="user[user_name]"id="username" type="username" placeholder="Username">
+        <label for="email">Email</label>
+        <input name="user[email]" id="email" type="email" placeholder="Email">
 
-    <label for="password">Password</label>
-    <input name="user[password]" id="password" type="password" placeholder="Password">
+        <label for="username">Username</label>
+        <input name="user[user_name]"id="username" type="username" placeholder="Username">
 
-    <label for="dealer" class="pure-radio">
-        <input id="dealer" type="radio" name="user[user_type]" value="dealer">
-        I sell cars
-    </label>
+        <label for="password">Password</label>
+        <input name="user[password]" id="password" type="password" placeholder="Password">
 
-    <label for="user" class="pure-radio">
-        <input id="user" type="radio" name="user[user_type]" value="user" checked>
-        I buy cars
-    </label>
+        <label for="dealer" class="pure-radio">
+            <input id="dealer" type="radio" name="user[user_type]" value="dealer">
+            I sell cars
+        </label>
 
-    <label for="dealer[dealership]">Name of dealership</label>
-    <input name="dealer[dealership]" placeholder="Name of dealership">
+        <label for="user" class="pure-radio">
+            <input id="user" type="radio" name="user[user_type]" value="user" checked>
+            I buy cars
+        </label>
 
-    <label for="dealer[email]">Email</label>
-    <input name="dealer[email]" placeholder="Name of email">
+        <label for="dealer[dealership]">Name of dealership</label>
+        <input name="dealer[dealership]" placeholder="Name of dealership">
 
-    <label for="dealer[image]">Image</label>
-    <input name="dealer[image]" placeholder="Image URL">
+        <label for="dealer[email]">Email</label>
+        <input name="dealer[email]" placeholder="Dealership email">
 
-    <button type="register" class="pure-button pure-button-primary">Register</button>
-  </fieldset>
-</form>
+        <label for="dealer[image]">Image</label>
+        <input name="dealer[image]" placeholder="Image URL">
+
+        <button type="register" class="pure-button pure-button-primary">Register</button>
+      </fieldset>
+    </form>
+</section>

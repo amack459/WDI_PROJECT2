@@ -80,5 +80,15 @@ section.home .cars{
 /*login*/
 section.login {
   text-align: center;
-  outline-color: #F8F8F8;
+  outline: #F8F8F8;
+}
+
+/*register*/
+section.register {
+  text-align: center;
+  outline: #F8F8F8;
+}
+
+.pure-button{
+  background: #2D3142;
 }
