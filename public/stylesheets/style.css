@@ -44,7 +44,7 @@ li {
 #menu {
   position: fixed;
   background: #2D3142;
-  width: 15%;
+  width: 190px;
   height: 100vh;
 }
 
@@ -89,6 +89,11 @@ section.login {
   margin-left: 20px;
 }
 
+.pure-button-primary {
+  margin-top: 150px;
+  color: #F8F8F8;
+}
+
 
 /*register*/
 section.register {
@@ -100,8 +105,7 @@ section.register {
   background: #2D3142;
   border-radius: 20px;
   box-shadow: 3px 4px 2px 0px #8D99AE;
-  margin-top: 145px;
-  margin-left: 25px;
+  color: #F8F8F8;
 }
 
 .pure-button:hover {

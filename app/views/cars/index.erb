@@ -4,31 +4,29 @@
 
 <h1>ALL CARS</h1>
 
-<div class="all-cars pure-g">  
+<!-- <div class="all-cars pure-g">   -->
 <% @cars.each do |car| %>
   <li class="all-cars pure-u-md-2"><%=car.year%> <%= car.model %></li>
-  <li><a href="/cars/<%= car.id %>"> 
+  <li class="all-cars pure-u-md-2"><a href="/cars/<%= car.id %>"> 
     <img src="<%= car.image %>" width="300"> 
   </a></li>
-  <li >£ <%= car.price %></li>
+  <li class="all-cars pure-u-md-2">£ <%= car.price %></li>
+<!-- </div> -->
   
   <% if is_dealer? %>
 
  <!--  <a href="/cars/<%= car.id %>/edit">Edit</a> -->
 
- 
- <h3><%= @current_user.user_name.capitalize %></h3>
-
  <li>
   <form method="get" action="/cars/<%= car.id %>/edit">
-    <button type="submit" class="pure-button pure-button-primary">Edit</button>
+    <button type="submit" class="pure-button">Edit</button>
   </form>
 </li>
 
   <li>
     <form method="post" action="/cars/<%= car.id %>/delete">
       <input type="hidden" name="_method" value="delete">
-      <button type="submit" class="pure-button pure-button-primary">Delete</button>
+      <button type="submit" class="pure-button">Delete</button>
       <!-- <button>Delete</button> -->
     </form>
   <li>
@@ -37,7 +35,7 @@
   
   <li>
     <form method="post" action="/cars/<%= car.id %>/add-to-wishlist">
-      <button type="submit" class="pure-button pure-button-primary">ADD TO WISHLIST</button>
+      <button type="submit" class="pure-button">ADD TO WISHLIST</button>
     </form>
   <li>
 
@@ -48,7 +46,7 @@
   <% end %>
 <% end %>
 
-</div>
+
 
 </section>
 
