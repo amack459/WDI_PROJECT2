@@ -2,12 +2,13 @@
 
 
 
-<div class="pure-g">
-    <div class="pure-u-lg-1">  
-    <% Car.all.each do |car| %>
+<div class="pure-g car-home">  
+  <% Car.all.each do |car| %>
+  <li class="pure-u-md-2 car-item">
     <a href="/cars/<%= car.id %>">
-    <img src="<%= car.image %>" width="400">
+      <img src="<%= car.image %>" width="400">
     </a>
-    <% end %>
-    </div>
+  </li>
+
+  <% end %>
 </div>

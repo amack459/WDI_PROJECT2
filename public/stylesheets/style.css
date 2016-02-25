@@ -1,17 +1,54 @@
 body {
+  font-family: disco;
+  font-weight: bold;
   background: #F8F8F8;
   margin-right: 160px;
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.car-list {
+  margin: 0 8vw 0 8vw;
+  text-align: center
+}
+
+.car-item {
+  margin: 2vw;
+  list-style-type: none;
+
+}
+
+/*.car-item:nth-child(0) {
+  width: 80vw;
+  height: 40vh;
+}*/
+
+#menu, .container {
+  display: inline-block;
+}
+
+.container {
+  width: 80%;
 }
 
 #menu {
   background: #2D3142;
-  width: 160px;
+  width: 20%;
+  height: 100vh;
 }
 
-#dropdown {
-  background: #2D3142; 
+#pure-menu{
+
 }
 
-#pure-g {
-  float: right;
+h1 {
+  text-align: center;
+}
+
+div{
+  float: left
 }

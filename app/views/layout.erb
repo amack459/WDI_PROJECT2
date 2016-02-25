@@ -4,6 +4,7 @@
   <title></title>
   <%= css :application %>
   <%= js :application %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -12,9 +13,8 @@
 
 <div id="menu">
     <div class="pure-menu">
-        <a class="pure-menu-heading" href="/">CARfetch</a>
+        <a class="pure-menu-heading" href="/">CARfetch <i class="fa fa-car"></i></a>
         <ul class="pure-menu-list">        
-
 
             <% if is_logged_in? && is_dealer? %>
 
@@ -86,7 +86,7 @@
         </ul>
     </div>
 </div>
-<main>
+<main class="container">
     <%= yield %>
 </main>
 </body>
