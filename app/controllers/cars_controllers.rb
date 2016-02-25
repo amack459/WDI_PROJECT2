@@ -48,8 +48,11 @@ end
 post '/cars/:id/add-to-wishlist' do
 
   @car = Car.find(params[:id])
-  current_user.cars << @car
-  
+
+  if current_user.cars.count < 10
+    current_user.cars << @car
+  end
+
   # Send mail
   Mail.deliver do
     to "acacialmack@gmail.com"
