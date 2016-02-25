@@ -1,5 +1,6 @@
 body {
   background: #F8F8F8;
+  margin-right: 160px;
 }
 
 #menu {
@@ -9,4 +10,8 @@ body {
 
 #dropdown {
   background: #2D3142; 
+}
+
+#pure-g {
+  float: right;
 }

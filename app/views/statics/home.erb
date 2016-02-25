@@ -1,7 +1,13 @@
 <h1>HOME</h1>
 
-<ul>
-  <% Car.all.each do |car| %>
-  <a href="/cars/<%= car.id %>"><li><img src="<%= car.image %>" width="400"></li></a>
-  <% end %>
-</ul>
+
+
+<div class="pure-g">
+    <div class="pure-u-lg-1">  
+    <% Car.all.each do |car| %>
+    <a href="/cars/<%= car.id %>">
+    <img src="<%= car.image %>" width="400">
+    </a>
+    <% end %>
+    </div>
+</div>
