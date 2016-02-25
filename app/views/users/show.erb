@@ -3,9 +3,10 @@
 <ul>
   <% current_user.cars.each do |car| %>
   <a href="/cars/<%= car.id %>"><li><img src="<%= car.image %>" width="400"></li></a>
+  <form method="post" action="/users/cars/<%= car.id %>/delete">
+    <input type="hidden" name="_method" value="delete"></input>
+    <input type="submit" name="_method" value="DELETE" id="<%= car.id %>">
+  </form>
 <% end %>
-
-<form method="post" action="/users/<%= current_user.id %>/delete">
-  <input type="submit" name="_method" value="DELETE">
-  
 </ul>
+

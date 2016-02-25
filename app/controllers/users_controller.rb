@@ -30,6 +30,11 @@ get '/users/:id' do
   end
 end
 
+get '/users/:id/wishlist' do
+  @user = User.find(params[:id])
+  erb :"users/show"
+end
+
 #Edit/Update
 put '/users/:id' do
   @user = User.find(params[:id])
@@ -41,8 +46,7 @@ put '/users/:id' do
 end
 
 # #Delete
-# delete '/cars/:id/delete' do 
-#   @car = Car.find(params[:id])
-#   @car.destroy
-#   redirect "/cars"
-# end
+delete '/users/:id/wishlist' do 
+  current_user.cars.delete(params[:id])
+  redirect "/users/#{current_user.id}/wishlist"
+end

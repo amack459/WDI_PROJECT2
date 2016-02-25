@@ -1,6 +1,11 @@
 #Index
 get '/cars' do 
-  @cars = Car.all
+  if is_dealer?
+    dealer = Dealer.find(current_user.dealer_id)
+    @cars = dealer.cars
+  else
+    @cars = Car.all
+  end
   erb :'cars/index'
 end
 
@@ -60,8 +65,7 @@ post '/cars/:id/add-to-wishlist' do
     subject "Car request"
     body " Your car has been added to a wishlist"
   end
-
-  redirect "/cars"
+  redirect '/cars'
 end
 
 # #Delete
@@ -69,4 +73,16 @@ delete '/cars/:id/delete' do
   @car = Car.find(params[:id])
   @car.destroy
   redirect "/cars"
+end
+
+
+# delete car from user's wishlist
+delete '/users/cars/:id/delete' do
+  @car = Car.find(params[:id])
+  @car.users.delete(current_user)
+  if @car.save
+    redirect  "/cars"
+  else
+    erb :"users/show"
+  end
 end

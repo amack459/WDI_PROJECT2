@@ -1,7 +1,12 @@
-body{
-  background: #ffffcc;
+body {
+  background: #F8F8F8;
 }
 
-#menu{
+#menu {
+  background: #2D3142;
   width: 160px;
+}
+
+#dropdown {
+  background: #2D3142; 
 }
