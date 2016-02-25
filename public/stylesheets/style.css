@@ -80,7 +80,17 @@ section.home .cars{
 /*login*/
 section.login {
   text-align: center;
+  margin-top: 100px;
   outline: #F8F8F8;
+}
+
+.login-box{
+  margin-top: 150px;
+  margin-left: 25px;
+}
+
+button.login {
+  margin-top: 100px;
 }
 
 /*register*/
@@ -92,4 +102,16 @@ section.register {
 .pure-button{
   background: #2D3142;
   border-radius: 20px;
+  box-shadow: 3px 4px 2px 0px #8D99AE;
 }
+
+.pure-button:hover {
+  background: #2D3142;
+  border-radius: 20px;
+  box-shadow: none;
+
+}
+
+
+
+
