@@ -40,7 +40,7 @@
                 <% elsif is_logged_in? %>
 
                     <li class="pure-menu-item">
-                        <a href="/users/<%= current_user.id %>/wishlist" class="pure-menu-link"><%= current_user.user_name %>'s Wishlist</a>
+                        <a href="/users/<%= current_user.id %>/wishlist" class="pure-menu-link"><%= current_user.user_name.capitalize %>'s Wishlist</a>
                     </li>
 
                     <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
