@@ -10,16 +10,18 @@
   <% if is_dealer? %>
  <!--  <a href="/cars/<%= car.id %>/edit">Edit</a> -->
   <form method="post" action="/cars/<%= car.id %>/edit">
-    <input type="submit" name="_method" value="Edit">
+    <button type="submit" class="pure-button pure-button-primary">Edit</button>
 
   <form method="post" action="/cars/<%= car.id %>/delete">
-    <input type="submit" name="_method" value="DELETE">
+    <button type="submit" class="pure-button pure-button-primary">Delete</button>
     <!-- <button>Delete</button> -->
   </form>
   <% else %>
 
+  
+
   <form method="post" action="/cars/<%= car.id %>/add-to-wishlist">
-    <input type="submit" name="_method" value="Add to wishlist"></input>
+    <button type="submit" class="pure-button pure-button-primary">ADD TO WISHLIST</button>
   </form>
 
 <!--   <form method="post" action="/cars/<%= car.id %>/add-to-wishlist">

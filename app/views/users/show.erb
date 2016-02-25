@@ -5,8 +5,10 @@
   <a href="/cars/<%= car.id %>"><li><img src="<%= car.image %>" width="400"></li></a>
   <form method="post" action="/users/cars/<%= car.id %>/delete">
     <input type="hidden" name="_method" value="delete"></input>
-    <input type="submit" name="_method" value="DELETE" id="<%= car.id %>">
+    <button type="submit" class="pure-button pure-button-primary" id="<%= car.id %>">Delete</button>
   </form>
 <% end %>
 </ul>
+
+
 
