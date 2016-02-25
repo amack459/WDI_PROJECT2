@@ -56,7 +56,7 @@ post '/cars/:id/add-to-wishlist' do
   # Send mail
   Mail.deliver do
     to "acacialmack@gmail.com"
-    from "mx.hilliard@gmail.com"
+    from "acacialmack@gmail.com"
     subject "Car request"
     body " Your car has been added to a wishlist"
   end
