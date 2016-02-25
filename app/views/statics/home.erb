@@ -1,14 +1,14 @@
-<h1>HOME</h1>
+<section class="home">
+  <h1>HOME</h1>
 
+  <div class="cars pure-g">  
+    <% Car.all.each do |car| %>
+    <li class="card pure-u-md-2">
+      <a href="/cars/<%= car.id %>">
+        <img src="<%= car.image %>" width="350" height="200">
+      </a>
+    </li>
 
-
-<div class="pure-g car-home">  
-  <% Car.all.each do |car| %>
-  <li class="pure-u-md-2 car-item">
-    <a href="/cars/<%= car.id %>">
-      <img src="<%= car.image %>" width="400">
-    </a>
-  </li>
-
-  <% end %>
-</div>
+    <% end %>
+  </div> 
+</section>

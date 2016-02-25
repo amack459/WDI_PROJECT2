@@ -12,78 +12,81 @@
 
 
 <div id="menu">
-    <div class="pure-menu">
-        <a class="pure-menu-heading" href="/">CARfetch <i class="fa fa-car"></i></a>
-        <ul class="pure-menu-list">        
+    <div class="centered">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="/">CARfetch <i class="fa fa-car"></i></a>
+            <ul class="pure-menu-list">        
 
-            <% if is_logged_in? && is_dealer? %>
+                <% if is_logged_in? && is_dealer? %>
 
-                <li class="pure-menu-item">
-                    <a href="/" class="pure-menu-link"> <%= @current_user.user_name.capitalize %>'s Cars </a>
-                </li>
+                    <li class="pure-menu-item">
+                        <a href="/" class="pure-menu-link"> <%= @current_user.user_name.capitalize %>'s Cars </a>
+                    </li>
 
-                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                    <a href="/cars" id="menuLink1" class="pure-menu-link">Cars</a>
-                    <ul class="pure-menu-children">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <a href="/cars" id="menuLink1" class="pure-menu-link">Cars</a>
+                        <ul class="pure-menu-children">
+                        
+                            <li class="pure-menu-item"><a href="/cars/new" class="pure-menu-link">Add Car</a></li> 
+                        </ul>
+                    </li>
+
+                    <li class="pure-menu-item">
+                        <a href="/logout" class="pure-menu-link">Logout</a>
+                    </li>
+
                     
-                        <li class="pure-menu-item"><a href="/cars/new" class="pure-menu-link">Add Car</a></li> 
-                    </ul>
-                </li>
 
-                <li class="pure-menu-item">
-                    <a href="/logout" class="pure-menu-link">Logout</a>
-                </li>
+                <% elsif is_logged_in? %>
 
-                
+                    <li class="pure-menu-item">
+                        <a href="/users/<%= current_user.id %>/wishlist" class="pure-menu-link"><%= current_user.user_name %>'s Wishlist</a>
+                    </li>
 
-            <% elsif is_logged_in? %>
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <a href="/cars" id="menuLink1" class="pure-menu-link">Cars</a>
+                        <ul class="pure-menu-children">
 
-                <li class="pure-menu-item">
-                    <a href="/users/<%= current_user.id %>/wishlist" class="pure-menu-link"><%= current_user.user_name %>'s Wishlist</a>
-                </li>
+                            <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Aston Martin</a></li>
+                            <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Bentley</a></li>
+                            <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">BMW</a></li>
+                            <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Ferrari</a></li>
+                            <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Porsche</a></li>
+                            <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Maserati</a></li>
+                            <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Lotus</a></li>
+                            <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Mercedes</a></li>
+                            <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Tesla</a></li>
+                            <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Jaguar</a></li>
+                        </ul>
+                    </li>
 
-                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                    <a href="/cars" id="menuLink1" class="pure-menu-link">Cars</a>
-                    <ul class="pure-menu-children">
+                    <li class="pure-menu-item">
+                        <a href="/logout" class="pure-menu-link">Logout</a>
+                    </li>
 
-                        <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Aston Martin</a></li>
-                        <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Bentley</a></li>
-                        <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">BMW</a></li>
-                        <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Ferrari</a></li>
-                        <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Porsche</a></li>
-                        <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Maserati</a></li>
-                        <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Lotus</a></li>
-                        <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Mercedes</a></li>
-                        <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Tesla</a></li>
-                        <li class="pure-menu-item"><a href="/cars" class="pure-menu-link">Jaguar</a></li>
-                    </ul>
-                </li>
+                <% else %>
 
-                <li class="pure-menu-item">
-                    <a href="/logout" class="pure-menu-link">Logout</a>
-                </li>
+                    <li class="pure-menu-item">
+                        <a href="/register" class="pure-menu-link">Register</a>
+                    </li>
 
-            <% else %>
+                     <li class="pure-menu-item">
+                        <a href="/login" class="pure-menu-link">Login</a>
+                    </li>
 
-                <li class="pure-menu-item">
-                    <a href="/register" class="pure-menu-link">Register</a>
-                </li>
+                    <li class="pure-menu-item">
+                        <a href="/about" class="pure-menu-link">About</a>
+                    </li>
+                    
+                    <li class="pure-menu-item">
+                        <a href="/contact" class="pure-menu-link">Contact</a>
+                    </li>
 
-                 <li class="pure-menu-item">
-                    <a href="/login" class="pure-menu-link">Login</a>
-                </li>
-
-                <li class="pure-menu-item">
-                    <a href="/about" class="pure-menu-link">About</a>
-                </li>
-                
-                <li class="pure-menu-item">
-                    <a href="/contact" class="pure-menu-link">Contact</a>
-                </li>
-
-            <% end %>
-       
-        </ul>
+                <% end %>
+           
+            </ul>
+        </div>
+        
     </div>
 </div>
 <main class="container">
