@@ -1,29 +1,32 @@
+<section class="edit-cars">
+
 <h1>EDIT <%= @car.make.upcase%> <%= @car.model.upcase %> </h1>
 
 <div class="pure-g">
   <li class="pure-u-1">
-<form class="pure-form pure-form-stacked" method="post" action="/cars/<%= @car.id %>">
-<input type="hidden" name="_method" value="put">
-  <fieldset>
-  <legend>Register</legend>
 
-    <label for="make">Make</label>
-    <input name="car[make]" id="make" type="make" placeholder="Make" value="<%= @car.make%>">
+    <form class="pure-form pure-form-stacked" method="post" action="/cars/<%= @car.id %>">
+    <input type="hidden" name="_method" value="put">
+      <fieldset>
 
-    <label for="model">Model</label>
-    <input name="car[model]"id="model" type="model" placeholder="Model" value="<%= @car.model%>">
+        <label for="make">Make</label>
+        <input name="car[make]" id="make" type="make" placeholder="Make" value="<%= @car.make%>">
 
-    <label for="year">Year</label>
-    <input name="car[year]" id="year" type="year" placeholder="Year" value="<%= @car.year %>">
-    
-    <label for="price">Price</label>
-    <input name="car[price]" id="price" type="price" placeholder="Price" value="<%= @car.price %>">
+        <label for="model">Model</label>
+        <input name="car[model]"id="model" type="model" placeholder="Model" value="<%= @car.model%>">
 
-    <label for="image">Image</label>
-    <input name="car[image]" placeholder="Image URL" type="price" value="<%= @car.image %>">
+        <label for="year">Year</label>
+        <input name="car[year]" id="year" type="year" placeholder="Year" value="<%= @car.year %>">
+        
+        <label for="price">Price</label>
+        <input name="car[price]" id="price" type="price" placeholder="Price" value="<%= @car.price %>">
 
-  </fieldset>
-    <button type="add_car" class="pure-button">Save Edit</button>
-</form>
-</li>
-</div>
+        <label for="image">Image</label>
+        <input name="car[image]" placeholder="Image URL" type="price" value="<%= @car.image %>">
+
+      </fieldset>
+        <button type="add_car" class="pure-button">Save Edit</button>
+    </form>
+  </li>
+ </div>
+</section>

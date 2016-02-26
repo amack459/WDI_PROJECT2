@@ -72,6 +72,11 @@ h1 {
   display: inline-block;
 }
 
+/*home*/
+section.home h1{
+  padding: 40px 0px 40px 0px;
+  border-bottom: 3px solid #2D3142;
+}
 
 section.home .cars{
   margin-left: 140px;
@@ -81,8 +86,6 @@ section.home .cars{
 /*login*/
 section.login {
   text-align: center;
-  margin-top: 100px;
-  outline: #F8F8F8;
 }
 
 .login-box{
@@ -95,6 +98,11 @@ section.login {
   color: #F8F8F8;
 }
 
+legend.login{
+  padding: 40px 0px 40px 0px;
+  border-bottom: 3px solid #2D3142;
+}
+
 
 /*register*/
 section.register {
@@ -104,8 +112,7 @@ section.register {
 
 legend.register{
   padding: 40px 0px 40px 0px;
-  border-bottom: 4px solid #2D3142;
-
+  border-bottom: 3px solid #2D3142;
 }
 
 .pure-button{
@@ -124,6 +131,20 @@ legend.register{
 
 }
 
+
+/*car profile*/
+section.car-profile h1{
+  padding: 40px 0px 40px 0px;
+  border-bottom: 3px solid #2D3142;
+}
+
+
+/*view with all cars*/
+section.all-cars h1{
+  padding: 40px 0px 40px 0px;
+  border-bottom: 3px solid #2D3142;
+}
+
 .all-cars{
   padding: 50px 0px 15px 0px;
 }
@@ -139,11 +160,17 @@ input{
   text-align: center;
   border-radius: 5px; 
   margin-bottom: 20px;
-
 }
 
-section.add-new-car {
-  margin-top: 200px;
+section.new-car h1{
+  padding: 40px 0px 40px 0px;
+  border-bottom: 3px solid #2D3142;
+}
+
+/*edit cars form*/
+section.edit-cars h1{
+  padding: 40px 0px 40px 0px;
+  border-bottom: 3px solid #2D3142;
 }
 
 
@@ -159,8 +186,22 @@ li.wishlist{
   padding-bottom: 20px;
 }
 
+section.wishlist h1{
+  padding: 40px 0px 40px 0px;
+  border-bottom: 3px solid #2D3142;
+}
 
 
+/*about*/
+section.about h1{
+  padding: 40px 0px 40px 0px;
+  border-bottom: 3px solid #2D3142;
+}
 
+/*contact*/
+section.contact h1{
+  padding: 40px 0px 40px 0px;
+  border-bottom: 3px solid #2D3142;
+}
 
 
