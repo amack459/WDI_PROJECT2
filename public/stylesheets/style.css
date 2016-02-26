@@ -51,6 +51,7 @@ li {
   background: #2D3142;
   width: 205px;
   height: 100vh;
+  color: #F8F8F8;
 }
 
 
@@ -160,6 +161,7 @@ input{
   text-align: center;
   border-radius: 5px; 
   margin-bottom: 20px;
+  line-height: 1.5em;
 }
 
 section.new-car h1{
@@ -197,6 +199,13 @@ section.about h1{
   padding: 40px 0px 40px 0px;
   border-bottom: 3px solid #2D3142;
 }
+
+section.about p{
+ text-align: center;
+ margin: 80px 120px 80px 120px;
+}
+
+
 
 /*contact*/
 section.contact h1{
