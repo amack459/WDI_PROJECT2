@@ -46,12 +46,17 @@ li {
   margin-left: 18%;
 }
 
+.pure-menu{
+  color: #fff;
+}
+
 #menu {
   position: fixed;
   background: #2D3142;
   width: 205px;
   height: 100vh;
-  color: #F8F8F8;
+  color: white;
+
 }
 
 
@@ -216,6 +221,5 @@ section.contact h1{
 section.contact p{
    text-align: center;
    margin: 80px 120px 80px 120px;
-}
 }
 
