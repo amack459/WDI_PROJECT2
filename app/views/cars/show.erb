@@ -1,15 +1,20 @@
+
+<section class="car-profile">
+
+
 <h1><%= @car.make%> <%= @car.model %> </h1>
 
 <ul>
   <li>
     <a href="/cars/<%= @car.id %>">
-      <img src="<%= @car.image %>" width="300"> 
+      <img src="<%= @car.image %>" width="500"> 
     </a>
   </li>
   <li> Year: <%= @car.year %> </li>
   <li> Price: £ <%= @car.price %> </li>
   <li> Dealer Contact: <a href="http://www.gmail.com"><%= @car.dealer.email %></a> </li>
 </ul>
+</section>
 
 
  
