@@ -4,11 +4,11 @@
 
 <% if is_dealer? %>
 
-<h1>ALL <%= @current_user.user_name.upcase %> 'S ADDED CARS</h1>
+<h1><%= @current_user.user_name.upcase %>'S ADDED CARS</h1>
 
 <% else %>
 
-<h1>ALL CARS AVAILABLE TO <%= @current_user.user_name.upcase %> </h1>
+<h1>CARS AVAILABLE TO <%= @current_user.user_name.upcase %> </h1>
 
 <% end %>
 
