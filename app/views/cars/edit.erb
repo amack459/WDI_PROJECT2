@@ -1,6 +1,7 @@
 <h1>EDIT <%= @car.make.upcase%> <%= @car.model.upcase %> </h1>
 
-
+<div class="pure-g">
+  <li class="pure-u-1">
 <form class="pure-form pure-form-stacked" method="post" action="/cars/<%= @car.id %>">
 <input type="hidden" name="_method" value="put">
   <fieldset>
@@ -19,8 +20,10 @@
     <input name="car[price]" id="price" type="price" placeholder="Price" value="<%= @car.price %>">
 
     <label for="image">Image</label>
-    <input name="car[image]" placeholder="Image URL" value="<%= @car.image %>">
+    <input name="car[image]" placeholder="Image URL" type="price" value="<%= @car.image %>">
 
-    <button type="add_car" class="pure-button pure-button-primary">Save Edit</button>
   </fieldset>
+    <button type="add_car" class="pure-button">Save Edit</button>
 </form>
+</li>
+</div>
