@@ -213,4 +213,9 @@ section.contact h1{
   border-bottom: 3px solid #2D3142;
 }
 
+section.contact p{
+   text-align: center;
+   margin: 80px 120px 80px 120px;
+}
+}
 
