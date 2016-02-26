@@ -102,6 +102,12 @@ section.register {
   outline: #F8F8F8;
 }
 
+legend.register{
+  padding: 40px 0px 40px 0px;
+  border-bottom: 4px solid #2D3142;
+
+}
+
 .pure-button{
   background: #2D3142;
   border-radius: 20px;
