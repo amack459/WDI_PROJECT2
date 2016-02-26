@@ -1,4 +1,4 @@
-<h1>EDIT CAR <%= @car.make%> <%= @car.model %> </h1>
+<h1>EDIT <%= @car.make.upcase%> <%= @car.model.upcase %> </h1>
 
 
 <form class="pure-form pure-form-stacked" method="post" action="/cars/<%= @car.id %>">
