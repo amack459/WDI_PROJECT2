@@ -59,6 +59,7 @@ a {
 .pure-menu-link{
   color: #F8F8F8;
   background:  #2D3142;
+  padding: .5em .3em;
 }
 
 .pure-menu-link:hover{
