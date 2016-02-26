@@ -8,6 +8,7 @@ body {
 
 .pure-menu-heading{
   text-align: center;
+  color: #F8F8F8;
 }
 
 li {
@@ -55,8 +56,13 @@ a {
   margin-left: 18%;
 }
 
-.pure-menu{
-  color: #fff;
+.pure-menu-link{
+  color: #F8F8F8;
+  background:  #2D3142;
+}
+
+.pure-menu-link:hover{
+  background: #777;
 }
 
 #menu {
