@@ -1,9 +1,0 @@
-<h1><%= current_user.user_name.capitalize %>'s Wishlist</h1>
-
-<ul>
-  <% current_user.cars.each do |car| %>
-  <a href="/users/cars/<%= car.id %>"><li><img src="<%= car.image %>" width="400"></li></a>
-<% end %>
-  
-</ul>
-
