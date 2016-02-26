@@ -13,6 +13,15 @@
   <li> Year: <%= @car.year %> </li>
   <li> Price: £ <%= @car.price %> </li>
   <li> Dealer Contact: <a href="http://www.gmail.com"><%= @car.dealer.email %></a> </li>
+  
+  <% if !is_dealer? %>
+  <li>
+    <form method="post" action="/cars/<%= @car.id %>/add-to-wishlist">
+      <button type="submit" class="pure-button">ADD TO WISHLIST</button>
+    </form>
+  <li>
+  <% end %>
+ 
 </ul>
 </section>
 
