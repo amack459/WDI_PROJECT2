@@ -6,6 +6,10 @@ body {
   color: #2D3142;
 }
 
+.pure-menu-heading{
+  text-align: center;
+}
+
 li {
   list-style-type: none;
   text-align: center;
@@ -73,10 +77,6 @@ section.home .cars{
   margin-left: 140px;
 }
 
-/*add new car*/
-.new-car{
-
-}
 
 /*login*/
 section.login {
@@ -141,9 +141,18 @@ input{
 }
 
 
-.wishlist{
+/*wishlist*/
+
+form.wishlist{
   text-align: center;
+  margin: 20px 0px 30px 0px;
 }
+
+li.wishlist{
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
 
 
 

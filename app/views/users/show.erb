@@ -1,14 +1,19 @@
+
+<section class="wishlist">
 <h1><%= current_user.user_name.upcase %>'S WISHLIST</h1>
 
 <ul>
   <% current_user.cars.each do |car| %>
   <a href="/cars/<%= car.id %>"><li><img src="<%= car.image %>" width="400"></li></a>
+  <li class="wishlist pure-u-md-3"><%= car.make%></li>
+  <li class="wishlist pure-u-md-3"><%= car.model%></li>
   <form method="post" action="/users/cars/<%= car.id %>/delete" class="wishlist">
     <input type="hidden" name="_method" value="delete"></input>
     <button type="submit" class="pure-button" id="<%= car.id %>">Delete</button>
   </form>
 <% end %>
 </ul>
+</section>
 
 
 
