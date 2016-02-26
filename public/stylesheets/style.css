@@ -98,7 +98,7 @@ section.login {
   color: #F8F8F8;
 }
 
-legend.login{
+section.login h1{
   padding: 40px 0px 40px 0px;
   border-bottom: 3px solid #2D3142;
 }
@@ -110,7 +110,7 @@ section.register {
   outline: #F8F8F8;
 }
 
-legend.register{
+section.register h1{
   padding: 40px 0px 40px 0px;
   border-bottom: 3px solid #2D3142;
 }
