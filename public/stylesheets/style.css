@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'MyWebFont';
-    src: url('../public/stylsheets/web_fonts/disco/DISCO___-webfont.eot');
-    src: url('../public/stylsheets/web_fonts/disco/DISCO___-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../public/stylsheets/web_fonts/disco/DISCO___-webfont.woff') format('woff'),
-         url('../public/stylsheets/web_fonts/disco/DISCO___-webfont.ttf') format('truetype'),
-         url('../public/stylsheets/web_fonts/disco/DISCO___-webfont.svg#discoregular') format('svg');
+    src: url('../public/stylsheets/fonts/DISCO___-webfont.eot');
+    src: url('../public/stylsheets/fonts/DISCO___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../public/stylsheets/fonts/DISCO___-webfont.woff') format('woff'),
+         url('../public/stylsheets/fonts/DISCO___-webfont.ttf') format('truetype'),
+         url('../public/stylsheets/fonts/DISCO___-webfont.svg#discoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 * {
-    font-family: "MyWebFont";
+    font-family: 'MyWebFont';
 }
 
 body {
-  font-family: "MyWebFont";
+  font-family: 'MyWebFont';
   font-weight: bold;
   background: #F8F8F8;
   height: 100%;
