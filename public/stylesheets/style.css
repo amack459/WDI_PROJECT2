@@ -1,3 +1,6 @@
+@font-face { font-family: Disco; src: url('DISCO__.otf'); } 
+
+
 body {
   font-family: disco;
   font-weight: bold;
@@ -118,6 +121,7 @@ section.login {
 .pure-button.login {
   margin-top: 130px;
   color: #F8F8F8;
+  border-radius: 20px;
 }
 
 section.login h1{
