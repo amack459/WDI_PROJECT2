@@ -13,6 +13,7 @@ gem "sass"
 gem "sinatra-assetpack"
 gem "bcrypt"
 gem "mail"
+gem "aws-sdk"
 
 group :development do 
   gem "tux", "~> 0.3.0"
