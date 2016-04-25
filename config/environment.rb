@@ -33,6 +33,10 @@ assets do
   ]
   css :application, [  
     '/bower_components/pure/pure-min.css',
+    '/stylesheets/fonts/DISCO___-webfont.woff',
+    '/stylesheets/fonts/DISCO___-webfont..ttf',
+    '/stylesheets/fonts/DISCO___-webfont.eot',
+    '/stylesheets/fonts/DISCO___-webfont.svg',
     '/stylesheets/style.css'
   ]
   js_compression :jsmin    

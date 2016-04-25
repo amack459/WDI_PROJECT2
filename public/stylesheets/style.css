@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'MyWebFont';
-    src: url('/public/stylsheets/fonts/DISCO___-webfont.eot');
-    src: url('/public/stylsheets/fonts/DISCO___-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/public/stylsheets/fonts/DISCO___-webfont.woff') format('woff'),
-         url('/public/stylsheets/fonts/DISCO___-webfont.ttf') format('truetype'),
-         url('/public/stylsheets/fonts/DISCO___-webfont.svg#discoregular') format('svg');
+    src: url('./public/stylsheets/fonts/DISCO___-webfont.eot');
+    src: url('./public/stylsheets/fonts/DISCO___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./public/stylsheets/fonts/DISCO___-webfont.woff') format('woff'),
+         url('./public/stylsheets/fonts/DISCO___-webfont.ttf') format('truetype'),
+         url('./public/stylsheets/fonts/DISCO___-webfont.svg#discoregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
