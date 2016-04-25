@@ -1,5 +1,10 @@
 @font-face {
-    font-family: 'discoregular';
+  font-family: 'MyWebFont';
+  src: url("../fonts/CarnasExtraLightItalic.otf") format("truetype");
+}
+
+@font-face {
+    font-family: 'MyWebFont';
     src: url('../stylsheets/web_fonts/disco/DISCO___-webfont.eot');
     src: url('../stylsheets/web_fonts/disco/DISCO___-webfont.eot?#iefix') format('embedded-opentype'),
          url('../stylsheets/web_fonts/disco/DISCO___-webfont.woff') format('woff'),
@@ -10,8 +15,12 @@
 
 }
 
+* {
+    font-family: "MyWebFont";
+}
+
 body {
-  font-family: discoregular;
+  font-family: "MyWebFont";
   font-weight: bold;
   background: #F8F8F8;
   height: 100%;
