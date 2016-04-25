@@ -1,9 +1,4 @@
 @font-face {
-  font-family: 'MyWebFont';
-  src: url("../fonts/CarnasExtraLightItalic.otf") format("truetype");
-}
-
-@font-face {
     font-family: 'MyWebFont';
     src: url('../stylsheets/web_fonts/disco/DISCO___-webfont.eot');
     src: url('../stylsheets/web_fonts/disco/DISCO___-webfont.eot?#iefix') format('embedded-opentype'),
