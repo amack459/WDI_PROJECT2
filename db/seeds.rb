@@ -86,3 +86,9 @@ User.destroy_all
 ].each do |user|
   User.create!(user)
 end
+
+@cars = Car.all
+
+Dealer.all.each_with_index do |dealer, index|
+  dealer.cars << @cars[index]
+end

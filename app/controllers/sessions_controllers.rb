@@ -9,7 +9,7 @@ end
 post '/login' do 
   #find user by username
   user = User.find_by_email(params[:user][:email])
-  #if the is a user, checkk their password is correct
+  #if the is a user, check their password is correct
   if user && user.authenticate(params[:user][:password])
     #log the user in 
     session[:user_id] = user.id
