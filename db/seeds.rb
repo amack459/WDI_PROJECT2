@@ -72,6 +72,8 @@ Dealer.destroy_all
   Dealer.create!(dealer) 
 end
 
+
+
 User.destroy_all
 [
   { email: "amack@gmail.com", 
@@ -86,6 +88,17 @@ User.destroy_all
 ].each do |user|
   User.create!(user)
 end
+
+@dealer = Dealer.first
+@user   = User.first
+
+
+# @dealer = Dealer.create!(dealer)
+# @user   = User.create!(user)
+
+dealer = @user.dealer 
+user   = @dealer.user 
+
 
 @cars = Car.all
 

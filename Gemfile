@@ -13,7 +13,7 @@ gem "sass"
 gem "sinatra-assetpack"
 gem "bcrypt"
 gem "mail"
-gem "aws-sdk"
+gem "better_errors"
 
 group :development do 
   gem "tux", "~> 0.3.0"
